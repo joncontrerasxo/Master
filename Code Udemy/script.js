@@ -1,3 +1,4 @@
+'use strict';
 /*
 let js = 'amazing';
 
@@ -232,32 +233,32 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log(`Maybe someone else should drive...`);
 }
 
-*/
+
 
 const day = `friday`;
 
-// switch (day) {
-//     case `monday`: //day === `monday`
-//         console.log(`Plan course scructure`);
-//         console.log(`Go to coding meetup`);
-//         break;
-//     case `tuesday`:
-//         console.log(`Prepare theory videos`);
-//         break;
-//     case `wednesday`:
-//     case `thursday`:
-//         console.log(`Write code examples`);
-//         break;
-//     case `friday`:
-//         console.log(`Record videos`);
-//         break;
-//     case `saturday`:
-//     case `sunday`:
-//         console.log(`Enjoy the weekened :D`);
-//         break;
-//     default:
-//         console.log(`Not a valid day!`);
-// }
+switch (day) {
+    case `monday`: //day === `monday`
+        console.log(`Plan course scructure`);
+        console.log(`Go to coding meetup`);
+        break;
+    case `tuesday`:
+        console.log(`Prepare theory videos`);
+        break;
+    case `wednesday`:
+    case `thursday`:
+        console.log(`Write code examples`);
+        break;
+    case `friday`:
+        console.log(`Record videos`);
+        break;
+    case `saturday`:
+    case `sunday`:
+        console.log(`Enjoy the weekened :D`);
+        break;
+    default:
+        console.log(`Not a valid day!`);
+}
 
 //Coding challenge 
 
@@ -275,3 +276,26 @@ if (day == `monday`) {
 } else {
     console.log(`Day selected not valid!`);
 }
+
+
+//Conditional Operator
+
+const age = 21;
+
+age >= 18 ? console.log(`I like to drink beer`) :
+    console.log(`I like to drink water`);
+
+const drink = age >= 18 ? `Beer!` : `Water!`;
+console.log(drink);
+
+console.log(`I love to drink ${age>=18 ? `Beer!`:`Water!!`}`);
+
+*/
+
+//Strict mode test
+
+let hasDriversLicense = false;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log(`You can driveeeee!`);

@@ -58,4 +58,17 @@ if (averageDolphin > averageKoala && averageDolphin >= 100) {
     console.log(`The game is a DRAW!!!`);
 } else console.log(`There are no winners!!!`);
 
+
+
+//Coding Challenge #4
+
+const bill = 430;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+const grandTotal = bill + tip;
+
+console.log(`The bill is: ${bill}
+The tip is: ${tip}
+The Grand total is: ${grandTotal}`);
 */
