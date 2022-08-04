@@ -72,3 +72,7 @@ console.log(`The bill is: ${bill}
 The tip is: ${tip}
 The Grand total is: ${grandTotal}`);
 */
+
+//Fundamental part 2 
+
+//Coding Challenge #1

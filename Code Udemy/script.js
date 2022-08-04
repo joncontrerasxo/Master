@@ -376,4 +376,34 @@ function fruitProcessor(apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 
+
+
+const calcAverage = (scr1, scr2, scr3) => (scr1 + scr2 + scr3) / 3;
+
+const checkWinner = function(averageDolphin, averageKoala) {
+    if (averageDolphin >= 2 * averageKoala) {
+        console.log(`Dolphin's WIN (${averageDolphin} vs ${averageKoala})`)
+    } else if (averageKoala >= 2 * averageDolphin) {
+        console.log(`Koala's WIN (${averageKoala} vs ${averageDolphin})`)
+    } else console.log(`NOBODY WINS`);
+
+}
+
+const averageDolphin = calcAverage(85, 54, 41);
+const averageKoala = calcAverage(23, 34, 27);
+
+
+console.log(`Average dolphin is ${averageDolphin}, Average Koala is ${averageKoala}`)
+checkWinner(averageDolphin, averageKoala);
+
 */
+
+//Arrays
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1993, 1991, 2006, 1998);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
