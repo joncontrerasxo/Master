@@ -435,4 +435,62 @@ console.log(friends.indexOf(`Bob`));
 console.log(friends.includes(`Steven`));
 console.log(friends.includes(`Bob`));
 
+
+
+//Objects
+
+const jon = {
+    firstName: `Jon`,
+    lastName: `Contreras`,
+    age: 2037 - 1994,
+    job: `Student`,
+    friends: ['Diego', `Paul`, `Jan`]
+};
+
+console.log(jon);
+console.log(jon.lastName);
+console.log(jon[`lastName`]);
+
+const nameKey = `Name`;
+
+console.log(jon[`first` + nameKey]);
+console.log(jon[`last` + nameKey]);
+
+const message = prompt(`What do you want to know about Jon? choose between firstName, lastName, age, job, friends`);
+
+console.log(jon[message]);
+
+jon.location = `Seattle`;
+jon[`Twitter`] = `jontwitterxo`;
+console.log(jon);
+
+//Coding mini-challenge
+
+console.log(`${jon.firstName} has ${jon.friends.length} friends ${jon.friends} and his best friend is ${jon.friends[0]}`);
 */
+
+//Object methods
+
+const jon = {
+    firstName: `Jon`,
+    lastName: `Contreras`,
+    birthYear: 1994,
+    job: `Student`,
+    friends: ['Diego', `Paul`, `Jan`],
+    hasDriverLicense: true,
+
+    //     calcAge: function(birthYear) {
+    //         return 2037 - birthYear;
+    //     }
+    // 
+    calcAge: function() {
+        console.log(this);
+        return 2037 - this.birthYear;
+    }
+
+};
+//console.log(this);
+
+
+console.log(jon.calcAge());
+console.log(jon[`calcAge`]());

@@ -95,7 +95,7 @@ const averageKoala = calcAverage(23, 34, 27);
 console.log(`Average dolphin is ${averageDolphin}, Average Koala is ${averageKoala}`)
 checkWinner(averageDolphin, averageKoala);
 
-*/
+
 
 //Coding Challenge #2
 
@@ -115,3 +115,5 @@ const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
     //console.log(bills.length - 1);
 console.log(tips);
 console.log(total);
+
+*/
