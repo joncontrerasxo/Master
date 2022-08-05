@@ -71,8 +71,47 @@ const grandTotal = bill + tip;
 console.log(`The bill is: ${bill}
 The tip is: ${tip}
 The Grand total is: ${grandTotal}`);
-*/
+
 
 //Fundamental part 2 
 
 //Coding Challenge #1
+
+const calcAverage = (scr1, scr2, scr3) => (scr1 + scr2 + scr3) / 3;
+
+const checkWinner = function(averageDolphin, averageKoala) {
+    if (averageDolphin >= 2 * averageKoala) {
+        console.log(`Dolphin's WIN (${averageDolphin} vs ${averageKoala})`)
+    } else if (averageKoala >= 2 * averageDolphin) {
+        console.log(`Koala's WIN (${averageKoala} vs ${averageDolphin})`)
+    } else console.log(`NOBODY WINS`);
+
+}
+
+const averageDolphin = calcAverage(85, 54, 41);
+const averageKoala = calcAverage(23, 34, 27);
+
+
+console.log(`Average dolphin is ${averageDolphin}, Average Koala is ${averageKoala}`)
+checkWinner(averageDolphin, averageKoala);
+
+*/
+
+//Coding Challenge #2
+
+const calcTip = function(bill) {
+    let tip;
+    if (bill >= 50 && bill <= 300) {
+        tip = bill * 0.15
+    } else tip = bill * 0.2
+    return tip;
+}
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+    //console.log(bills.length - 1);
+console.log(tips);
+console.log(total);
