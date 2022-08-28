@@ -1,0 +1,10 @@
+.box {
+    border: solid 2px;
+    width: fit-content;
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 25%;
+    font-size: 45px;
+    border-color: red;
+}
